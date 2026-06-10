@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homem-Aranha: Missão Eco-Campo | Agrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🕷️ Homem-Aranha: Missão Eco-Campo 🌱</h1>
+        <p>Ajude o Aranha a manter o equilíbrio entre a produção e o meio ambiente!</p>
+    </header>
+
+    <main class="jogo-container">
+        <div class="painel">
+            <div>Pontos de Sustentabilidade: <span id="pontos">0</span></div>
+            <div>Combustível da Natureza: <span id="energia">100</span>%</div>
+        </div>
+
+        <div id="cenario">
+            <div id="aranha">🕷️</div>
+            
+            <div id="item-bom" class="item">💧</div>
+            <div id="item-ruim" class="item">⚠️</div>
+        </div>
+
+        <div class="instrucoes">
+            <p><strong>Como jogar:</strong> Use as setas <strong>Esquerda (◀)</strong> e <strong>Direita (▶)</strong> do teclado para mover o Homem-Aranha.</p>
+            <p>🟢 <strong>Pegue:</strong> Gotas de água (💧), Adubo Orgânico (💩) e Drones tecnológicos (🛸).</p>
+            <p>🔴 <strong>Evite:</strong> Venenos em excesso (⚠️) para não poluir o solo!</p>
+        </div>
+        
+        <div class="controles-mobile">
+            <button onclick="moverEsquerda()">◀ Esquerda</button>
+            <button onclick="moverDireita()">Direita ▶</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Jogo Educativo - Concurso de Programação Agrinho 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

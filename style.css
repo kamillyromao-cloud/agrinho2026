@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #e8f5e9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #d32f2f; /* Vermelho do Aranha */
+    color: white;
+    padding: 20px;
+    border-bottom: 5px solid #1976d2; /* Azul do Aranha */
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+.jogo-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Painel de Pontos */
+.painel {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Cenário do Jogo (A Fazenda) */
+#cenario {
+    width: 100%;
+    height: 400px;
+    background-color: #a5d6a7; /* Verde pasto */
+    border: 4px solid #1976d2;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Personagem Homem-Aranha */
+#aranha {
+    width: 50px;
+    height: 50px;
+    font-size: 2.5rem;
+    position: absolute;
+    bottom: 10px;
+    left: 275px; /* Posição inicial centralizada */
+    transition: left 0.1s ease;
+}
+
+/* Itens caindo */
+.item {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    position: absolute;
+    top: -50px;
+}
+
+/* Rodapé de Instruções */
+.instrucoes {
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: left;
+    font-size: 0.95rem;
+}
+
+.controles-mobile {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.controles-mobile button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    color: #666;
+}
